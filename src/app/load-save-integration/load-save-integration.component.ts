@@ -30,7 +30,7 @@ export class LoadSaveIntegrationComponent implements AfterViewInit, OnDestroy {
 	}
 
 	private readonly STORAGE_KEY = 'ckeditor-license-key';
-	private licenseKey = '';
+	private licenseKey = 'kllhaVr+Tjpo+ZfvSXQGzxWmYzvRRZsh8mOZTkoDx/DGFDJZFV+b1Oc=';
 
 	// Application data will be available under a global variable `appData`.
 	private appData = {
@@ -129,9 +129,6 @@ export class LoadSaveIntegrationComponent implements AfterViewInit, OnDestroy {
 	private boundCheckPendingActions = this.checkPendingActions.bind( this );
 
 	public ngOnInit() {
-		// Save the provided license key in the local storage.
-		this.licenseKey = window.localStorage.getItem( this.STORAGE_KEY ) || window.prompt( 'Your license key' );
-		window.localStorage.setItem( this.STORAGE_KEY, this.licenseKey );
 	}
 
 	public ngAfterViewInit() {
@@ -160,11 +157,6 @@ export class LoadSaveIntegrationComponent implements AfterViewInit, OnDestroy {
 		// Switch between inline and sidebar annotations according to the window size.
 		window.addEventListener( 'resize', this.boundRefreshDisplayMode );
 		this.refreshDisplayMode();
-	}
-
-	public resetLicenseKey() {
-		window.localStorage.removeItem( this.STORAGE_KEY );
-		window.location.reload();
 	}
 
 	private checkPendingActions( domEvt ) {
