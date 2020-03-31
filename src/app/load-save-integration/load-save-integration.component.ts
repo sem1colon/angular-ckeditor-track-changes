@@ -29,7 +29,6 @@ export class LoadSaveIntegrationComponent implements AfterViewInit, OnDestroy {
 		};
 	}
 
-	private readonly STORAGE_KEY = 'ckeditor-license-key';
 	private licenseKey = 'kllhaVr+Tjpo+ZfvSXQGzxWmYzvRRZsh8mOZTkoDx/DGFDJZFV+b1Oc=';
 
 	// Application data will be available under a global variable `appData`.
