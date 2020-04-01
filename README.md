@@ -15,7 +15,7 @@ The integration supports Angular from version 5.0.0. The `package.json` file sto
 
 1. Execute `npm run start` and open `http://localhost:8080` in your browser.
 
-1. Choose a sample and fill the prompt with your license key. [Contact us](https://ckeditor.com/contact/) for a trial licence key.
+1. Choose a sample and fill the prompt with your license key. [Contact CKEditor team](https://ckeditor.com/contact/) for a trial licence key.
 
 ## Overview
 
