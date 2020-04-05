@@ -9,8 +9,8 @@ The integration supports Angular from version 5.0.0. The `package.json` file sto
 1. Clone the repository:
 
    ```
-   git clone git@github.com:ckeditor/ckeditor5-collaboration-samples.git
-   cd ckeditor5-collaboration-samples/track-changes-for-angular
+   git clone git@github.com:sem1colon/angular-ckeditor-track-changes.git
+   cd angular-ckeditor-track-changes
    ```
 
 1. Execute `npm run start` and open `http://localhost:8080` in your browser.
